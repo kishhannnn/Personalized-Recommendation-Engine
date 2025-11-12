@@ -1,73 +1,84 @@
+# 🎬 CineMatch — Personalized Recommendation Engine
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kishhannnn/Personalized-Recommendation-Engine/main/homepage-preview.png" width="850" alt="CineMatch App Preview">
+</p>
+
+**CineMatch** is a full-stack web application built with **TypeScript**, **React (TSX)**, **Node.js (Express)**, and **MongoDB**.  
+It delivers **personalized movie recommendations** using collaborative filtering based on user preferences and viewing behavior.  
+The goal is to provide an intelligent, secure, and production-ready recommendation experience.
+
+---
+
+## 🌟 Overview
+
+CineMatch analyzes user–movie interactions (likes, favorites, watch history) to recommend films that align with personal interests.  
+It features a responsive React interface, REST APIs for real-time inference, MongoDB for data storage, and TypeScript across both backend and frontend for reliability and scalability.
+
+---
+
+## ⚙️ Key Features
+
+- 🎯 **Collaborative Filtering Logic** – Suggests movies tailored to each user’s behavior and similarity patterns.  
+- ⚡ **Low-Latency REST APIs** – Node.js + Express endpoints handle fast recommendation delivery.  
+- 🗄️ **MongoDB Integration** – Manages users, movie catalog, and interaction data efficiently.  
+- 💾 **Caching & Fallbacks** – Ensures quick response times and handles cold-start users gracefully.  
+- 🔐 **JWT Authentication** – Secures API routes and user sessions.  
+- 💡 **TypeScript Everywhere** – Full-stack type safety for cleaner, more maintainable code.  
+- 🧭 **Observability** – Includes structured logging, error tracking, and performance monitoring.  
+- 🖥️ **Modern Frontend** – Built with React (TSX), using responsive cards and search functionality for movie browsing.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | React (TSX), HTML, CSS |
+| **Backend** | Node.js, Express (TypeScript) |
+| **Database** | MongoDB |
+| **Authentication** | JWT |
+| **Language** | TypeScript |
+| **UI Frameworks** | Custom CSS / Tailwind (optional) |
+
+---
+
+## 🧩 Application Flow
+
+1. Users browse and interact with movie cards (like, favorite, rate).  
+2. Interaction data is stored in MongoDB collections.  
+3. The backend applies collaborative filtering logic to compute similarities.  
+4. Express API returns recommended movies.  
+5. React frontend dynamically updates carousels and lists with personalized results.
+
+---
+
+## 🔒 Security & Performance
+
+- JWT-protected routes for authentication  
+- Input validation and sanitization  
+- Secure HTTP headers (Helmet)  
+- Caching and response optimization  
+- Efficient query handling for high throughput  
+
+---
+
+## 📊 Observability
+
+- Structured and contextual logging  
+- Request latency metrics  
+- Correlation IDs for tracing user flows  
+- Graceful error handling and fallback responses  
+
+---
+
+## 💡 Future Enhancements
+
+- Hybrid recommendation (collaborative + content-based)  
+- Integration with Redis for caching  
+- Enhanced user analytics and feedback tracking  
+- Movie clustering and genre diversity controls  
+- A/B testing for recommendation algorithms  
 
 
-## Project info
-
-**URL**: https://lovable.dev/projects/e7b43a7a-e771-4d2a-9fdd-5ae123f59c17
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/e7b43a7a-e771-4d2a-9fdd-5ae123f59c17) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e7b43a7a-e771-4d2a-9fdd-5ae123f59c17) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Licensed under the **MIT License** — open for educational and development use.
